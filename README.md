@@ -16,9 +16,12 @@ The pipeline covers the full research workflow:
 4. **Adversarial robustness** — measuring detection AUC as QR codes are progressively corrupted
 5. **Explainability** — Grad-CAM visualizations showing where the CNN attends
 6. **Figure generation** — all paper figures reproduced from one script
-7. ## Key finding
 
-After building a confound-controlled, length-matched benchmark, I found that a **URL-length artifact** — benign URLs are short, phishing URLs long — was inflating reported payload-free detection accuracy by **up to 0.24 AUC**. Once the classes are length-matched, genuine signal is modest on clean codes, weak on styled codes, and collapses to near-chance on realistically captured codes. A tamper-robustness probe further shows that *random* module corruption destroys a QR code's decodability long before it evades detection — leaving optimised, error-correction-aware evasion as the key open problem.
+---
+
+## Key finding
+
+ After building a confound-controlled, length-matched benchmark, I found that a **URL-length artifact** — benign URLs are short, phishing URLs long — was inflating reported payload-free detection accuracy by **up to 0.24 AUC**. Once the classes are length-matched, genuine signal is modest on clean codes, weak on styled codes, and collapses to near-chance on realistically captured codes. A tamper-robustness probe further shows that *random* module corruption destroys a QR code's decodability long before it evades detection — leaving optimised, error-correction-aware evasion as the key open problem.
 
 
 ---
